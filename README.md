@@ -36,3 +36,6 @@ gera a quantidade de ações disponiveis
 
 
 ## Será necessario criar uma conta no site brapi e pegar o token,para fazer chamadas feing
+
+chamando a api brapi
+# GET -> https://brapi.dev/api/quote/{nomedaAção} ex: PETR4 nos parametro por o token
