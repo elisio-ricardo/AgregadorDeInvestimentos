@@ -1,0 +1,4 @@
+package com.agregador.agregadorDeInvestimentos.controller.dto;
+
+public record AccountResponseDto(String accountId, String description) {
+}

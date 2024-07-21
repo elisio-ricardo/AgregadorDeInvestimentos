@@ -1,6 +1,8 @@
 package com.agregador.agregadorDeInvestimentos.controller;
 
 
+import com.agregador.agregadorDeInvestimentos.controller.dto.AccountResponseDto;
+import com.agregador.agregadorDeInvestimentos.controller.dto.CreateAccountDto;
 import com.agregador.agregadorDeInvestimentos.controller.dto.CreateUserDto;
 import com.agregador.agregadorDeInvestimentos.controller.dto.UpdateUserDto;
 import com.agregador.agregadorDeInvestimentos.entity.User;
@@ -56,6 +58,19 @@ public class UserController {
     public ResponseEntity<Void> deleteById(@PathVariable("userId") String userId) {
         userService.deleteById(userId);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/{userId}/accounts")
+    public ResponseEntity<Void> createAccount(@PathVariable("userId") String userId,
+                                              @RequestBody CreateAccountDto createAccountDto) {
+        userService.createAccount(userId, createAccountDto);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{userId}/accounts")
+    public ResponseEntity<List<AccountResponseDto>> findAccountById(@PathVariable("userId") String userId) {
+        var accounts = userService.listAccountsById(userId);
+        return ResponseEntity.ok(accounts);
     }
 
 
