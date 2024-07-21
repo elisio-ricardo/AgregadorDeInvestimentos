@@ -26,8 +26,10 @@ json criação Accounts
 
 
 ## Post -> localhost:8080/v1/accounts/{accountId}/stocks
-
+gera a quantidade de ações disponiveis
 {
 "stockId": "PETR4", 
 "quantity": 100
 }
+
+## GET -> localhost:8080/v1/accounts/{accountId}/stocks
