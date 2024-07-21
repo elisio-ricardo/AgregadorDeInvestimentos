@@ -23,3 +23,11 @@ json criação Accounts
 "stockId": "PETR4", 
 "description": "Petrobras"
 }
+
+
+## Post -> localhost:8080/v1/accounts/{accountId}/stocks
+
+{
+"stockId": "PETR4", 
+"quantity": 100
+}
