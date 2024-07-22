@@ -33,3 +33,9 @@ gera a quantidade de ações disponiveis
 }
 
 ## GET -> localhost:8080/v1/accounts/{accountId}/stocks
+
+
+## Será necessario criar uma conta no site brapi e pegar o token,para fazer chamadas feing
+
+chamando a api brapi
+### GET -> https://brapi.dev/api/quote/{nomedaAção} ex: PETR4 nos parametro por o token, esta chamada esta sendo feita no accountService, para gerar o valor total das ações
