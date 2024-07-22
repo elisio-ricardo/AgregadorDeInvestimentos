@@ -39,3 +39,4 @@ gera a quantidade de ações disponiveis
 
 chamando a api brapi
 ### GET -> https://brapi.dev/api/quote/{nomedaAção} ex: PETR4 nos parametro por o token, esta chamada esta sendo feita no accountService, para gerar o valor total das ações
+o teste esta sendo feito por esta chamada ## GET -> localhost:8080/v1/accounts/{accountId}/stocks
